@@ -105,10 +105,6 @@ The frontend will run on `http://localhost:5173` and the backend on `http://loca
 - `PUT /api/notes/:id` - Update a note
 - `DELETE /api/notes/:id` - Delete a note
 
-## Screenshots
-
-You can add screenshots here once the app is running locally.
-
 ## License
 
 This project is open-source and available under the ISC License.
