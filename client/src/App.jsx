@@ -85,7 +85,7 @@ const[category,setCategory]=useState("Personal")
      <input type="text" placeholder="Search--" value={search}
      onChange={(e)=>setSearch(e.target.value)}/>
       <button onClick={()=>setDarkMood(!darkMood)}>
-        {darkMood ? "Light mood" : "Dark Mood"}
+        {darkMood ? "Light mode" : "Dark Mode"}
         </button>
       </div>
 
