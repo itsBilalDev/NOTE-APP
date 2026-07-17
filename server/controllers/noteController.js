@@ -4,6 +4,10 @@ import Note from "../models/note.js"
 
 export const createNotes=async(req,res)=>{
     try{
+       const { title, content } = req.body;
+        if (!title || !content) {
+            return res.status(400).json({ message: "Title and content are required" });
+        }
         let note=await Note.create(req.body);
         res.status(201).json(note);
     }catch(error){
@@ -34,7 +38,7 @@ export const deleteNotes=async(req,res)=>{
         })
       }
       res.status(200).json({
-        message: "note deleted succcessfully"
+        message: "note deleted successfully"
       })
     }catch(error){
         res.status(500).json(error)
